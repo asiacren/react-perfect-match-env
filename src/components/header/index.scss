@@ -1,0 +1,9 @@
+@import "../../assets/style/scss/common.scss";
+
+.style {
+}
+
+:local(.style) {
+  background: $font-color-fff;
+  color: red;
+}

@@ -1,0 +1,45 @@
+@import "../../assets/style/less/common.less";
+
+:global(.footer) {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: @font-color-fff;
+}
+.style {
+  background: @font-color-fff;
+  color: red;
+}
+
+:local(.style) {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: @font-color-fff;
+}
+
+.tabBar_box {
+  display: flex;
+  height: 98px;
+  align-items: center;
+  justify-content: center;
+
+  .tabBar_item {
+    flex: 1;
+    font-size: 20px;
+    color: @font-color-333;
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      margin: 0 auto;
+
+      img {
+        width: 52px;
+        height: 52px;
+      }
+    }
+  }
+}
