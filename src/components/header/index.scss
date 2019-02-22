@@ -1,9 +1,42 @@
 @import "../../assets/style/scss/common.scss";
 
-.style {
-}
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 98px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: $background-color-5B8AFE;
+  color: $font-color-fff;
+  font-size: 36px;
+  box-sizing: border-box;
 
-:local(.style) {
-  background: $font-color-fff;
-  color: red;
+  .title {
+    position: relative;
+    width: 100%;
+    height: 98px;
+    line-height: 98px;
+  }
+
+  .triangle_box {
+    position: absolute;
+    left: 0;
+    line-height: 98px;
+    padding: 0 30px;
+  }
+
+  .triangle {
+    
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-135deg);
+    margin-left: 7px;
+  }
 }
