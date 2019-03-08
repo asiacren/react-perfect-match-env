@@ -19,6 +19,9 @@ class Header extends Component {
 
   constructor(props) {
     super(props);
+
+    console.log(props)
+
     this.state = {
       visible: props.visible
     };

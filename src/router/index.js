@@ -17,7 +17,7 @@ class Routers extends Component {
     let AppRouter = (
       <App>
         <Switch>
-          <Route exact path="/" component={Index} visible={false}></Route>
+          <Route exact path="/" render={ props => <Index {...props}/>}></Route>
           <Route path="/list" component={List}></Route>
           <Route path="/me" component={Me} visible={true}></Route>
           <Route path="/details/:id" component={Details} visible={true}></Route>
